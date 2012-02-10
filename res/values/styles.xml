@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="buttonText" parent="android:Widget.Button">
+        <!--  <item name="android:background">@drawable/button</item> -->
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="separatorTop">
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_marginTop">2sp</item>
+        <item name="android:layout_marginBottom">0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1sp</item>
+    </style>
+    <style name="separatorBottom">
+        <item name="android:background">#cccccc</item>
+        <item name="android:layout_marginTop">0sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1sp</item>
+    </style>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5sp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonStartService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/buttonText"
+            android:onClick="handleButton"
+            android:text="@string/start_service" />
+
+        <Button
+            android:id="@+id/buttonStopService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/buttonText"
+            android:onClick="handleButton"
+            android:text="@string/stop_service" />
+    </LinearLayout>
+
+    <View style="@style/separatorTop"/>
+    <View style="@style/separatorBottom"/>
+    
+    <LinearLayout
+        android:id="@+id/linearLayoutCounting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <Button
+            android:id="@+id/buttonStartCounting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="handleButton"
+            style="@style/buttonText"
+            android:text="@string/start_counting" />
+
+        <Button
+            android:id="@+id/buttonStopCounting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/buttonText"
+			android:onClick="handleButton"
+            android:text="@string/stop_counting" />
+
+    </LinearLayout>
+
+    <View style="@style/separatorTop"/>
+    <View style="@style/separatorBottom"/>
+    
+    <LinearLayout
+        android:id="@+id/linearLayoutGetCount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonGetCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="handleButton"
+            style="@style/buttonText"
+            android:text="@string/get_count" />
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>
