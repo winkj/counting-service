@@ -54,7 +54,6 @@ public class CountingService extends Service implements CountListener {
         mCountingService.addListener(this);
         
         mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        
         updateNotification(0);
     }
     
