@@ -28,6 +28,7 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.util.Log;
 
 public class CountingService extends Service implements CountListener {
@@ -84,7 +85,11 @@ public class CountingService extends Service implements CountListener {
     @Override
     public void onDestroy() {
         mNotificationManager.cancel(TEMP_NOTIFICATION_ID);
-
+        try {
+            mCountingService.stopCounting();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
         Log.d(TAG, "onDestroy");
         super.onDestroy();
     }
